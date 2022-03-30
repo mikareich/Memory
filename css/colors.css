@@ -1,0 +1,17 @@
+.green {
+  /* #198754 */
+  --bg-color: #d1e7dd;
+  --text-color: #198754;
+  --card-bg-color: #dff5eb;
+  --card-text-color: #198754;
+  --card-border-color: #198754;
+}
+
+.red {
+  /* #dc3545 */
+  --bg-color: #f8d7da;
+  --text-color: #dc3545;
+  --card-bg-color: #ffe1e3;
+  --card-text-color: #dc3545;
+  --card-border-color: #dc3545;
+}
