@@ -1,0 +1,3 @@
+type ContextType = {
+  // game state ?
+};

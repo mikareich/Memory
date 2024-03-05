@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container {
+  @apply mx-auto px-4 max-w-4xl;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.theme-blue {
+  --primary: theme("colors.blue.500");
+  --primary-light: theme("colors.blue.300");
+  --primary-dark: theme("colors.blue.700");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.theme-green {
+  --primary: theme("colors.green.500");
+  --primary-light: theme("colors.green.300");
+  --primary-dark: theme("colors.green.700");
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.theme-red {
+  --primary: theme("colors.red.500");
+  --primary-light: theme("colors.red.300");
+  --primary-dark: theme("colors.red.700");
+}
+
+.theme-yellow {
+  --primary: theme("colors.yellow.500");
+  --primary-light: theme("colors.yellow.300");
+  --primary-dark: theme("colors.yellow.700");
 }
